@@ -1,0 +1,242 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+
+
+
+
+
+.barra{
+    background-color: rgb(238, 11, 45);
+    padding: 1%;
+    text-align: left;
+}
+.barra a{
+    color: white;
+    margin: 1%;
+    font-size: 100%;
+    
+}
+
+.barra a:hover{
+    color:black;
+    background-color: white;
+    padding: 1%;
+    cursor: pointer;
+}
+
+
+
+
+
+
+header{
+    background-color: rgb(220, 15, 46);
+    text-align: center;
+    padding: 5%;
+    color: white;
+    font-size: 140%;
+}
+
+.boton{
+    background-color: black;
+    color: white;
+    padding: 0.8%;
+    margin: 2%;
+}
+
+
+
+
+.Sec2{
+    background-color: white;
+    padding: 3% 20%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: auto;
+    flex-direction: column;
+    max-width: 100%;
+    gap: 20px;
+
+}
+
+.seccion2{
+    flex: 1;
+    text-align: right;
+}
+
+.seccion2 h2{
+    text-align: left;
+    padding: 1%;
+    font-size:250%;
+
+}
+
+.seccion2 h3{
+    text-align: left;
+    padding: 1%;
+    font-size:120% ;
+}
+
+.seccion2 p{
+    text-align: left;
+    padding: 1%;
+    font-size: 100%;
+    
+}
+
+
+.Img1{
+    width: 20%;
+    float: right;
+    padding: 8% 0%;
+    max-width: 200px;
+    object-fit: cover;
+
+}
+
+
+
+
+
+
+
+
+
+.Sec3{
+    background-color: rgba(128, 128, 128, 0.418);
+    padding: 5% 15%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: auto;
+    flex-direction: column;
+    gap: 20px;
+
+}
+
+.seccion3{
+    text-align: left;
+    flex: 1;
+
+
+
+}
+
+.seccion3 h2{
+    text-align: left;
+    padding: 1%;
+    font-size:250%;
+
+
+}
+
+.seccion3 h3{
+    text-align: left;
+    padding: 1%;
+    font-size:120%;
+
+}
+
+.seccion3 p{
+    text-align: left;   
+    padding: 1%;
+    font-size:100%;
+
+}
+
+.Img2{
+    width: 30%;
+    float: left;
+    padding: 5% 5%;
+}
+
+
+
+
+
+
+
+
+.quote{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: gray;
+    text-align: center;
+    padding: 3%;
+}
+
+.quote p{
+    color: white;
+    font-size: medium;
+    font-weight: 0;
+    font-size:large;
+
+
+}
+
+
+
+
+
+
+
+
+
+footer{
+    background-color: rgba(128, 128, 128, 0.418);
+    text-align: center;
+    padding: 4%;
+    color: gray;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 768px) {
+    .Sec2, .Sec3 {
+        flex-direction: column;   /* apila texto e imagen */
+        text-align: center;
+    }
+
+    .Sec2 img, .Sec3 img {
+        margin-top: 20px;
+        max-width: 120px;  /* imágenes más pequeñas en móvil */
+    }
+
+    .seccion2 h2, .seccion3 h2 {
+        font-size: 180%;
+    }
+
+    .seccion2 h3, .seccion3 h3,
+    .seccion2 p, .seccion3 p {
+        font-size: 95%;
+    }
+}
