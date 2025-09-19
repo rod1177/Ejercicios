@@ -1,0 +1,171 @@
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Barra de navegación */
+.barra {
+  background-color: rgb(238, 11, 45);
+  padding: 1rem;
+  display: flex;
+  flex-wrap: wrap; /* Permite que los enlaces bajen en móvil */
+  gap: 1rem;
+}
+
+.barra a {
+  color: white;
+  text-decoration: none;
+  font-size: 1rem;
+}
+
+.barra a:hover {
+  color: black;
+  background-color: white;
+  padding: 0.5rem;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* Header */
+header {
+  background-color: rgb(220, 15, 46);
+  text-align: center;
+  padding: clamp(2rem, 5vw, 5rem); /* Escalable */
+  color: white;
+  font-size: clamp(1rem, 2vw, 1.4rem);
+}
+
+/* Botón */
+.boton {
+  background-color: black;
+  color: white;
+  padding: 0.5rem 1rem; /* fijo y accesible */
+  margin: 1rem;
+  border: none;
+  cursor: pointer;
+  border-radius: 6px;
+}
+
+/* Sección 2 */
+.Sec2 {
+  background-color: white;
+  padding: 2rem 10%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.seccion2 {
+  flex: 1;
+  text-align: left;
+}
+
+.seccion2 h2 {
+  font-size: clamp(1.5rem, 5vw, 2.5rem);
+  margin-bottom: 0.5rem;
+}
+
+.seccion2 h3 {
+  font-size: clamp(1rem, 3vw, 1.3rem);
+  margin-bottom: 0.5rem;
+}
+
+.seccion2 p {
+  font-size: clamp(0.9rem, 2.5vw, 1rem);
+}
+
+.Img1 {
+  flex: 1;
+  max-width: 250px;
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+/* Sección 3 */
+.Sec3 {
+  background-color: rgba(128, 128, 128, 0.418);
+  padding: 2rem 10%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.seccion3 {
+  flex: 1;
+  text-align: left;
+}
+
+.seccion3 h2 {
+  font-size: clamp(1.5rem, 5vw, 2.5rem);
+  margin-bottom: 0.5rem;
+}
+
+.seccion3 h3 {
+  font-size: clamp(1rem, 3vw, 1.3rem);
+  margin-bottom: 0.5rem;
+}
+
+.seccion3 p {
+  font-size: clamp(0.9rem, 2.5vw, 1rem);
+}
+
+.Img2 {
+  flex: 1;
+  max-width: 350px;
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+/* Cita */
+.quote {
+  background-color: gray;
+  text-align: center;
+  padding: 2rem;
+}
+
+.quote p {
+  color: white;
+  font-size: clamp(1rem, 3vw, 1.2rem);
+  font-weight: 400;
+}
+
+/* Footer */
+footer {
+  background-color: rgba(128, 128, 128, 0.418);
+  text-align: center;
+  padding: 2rem;
+  color: gray;
+  font-size: clamp(0.9rem, 2vw, 1rem);
+}
+
+/* 📱 Media Queries */
+@media (max-width: 768px) {
+  .Sec2, .Sec3 {
+    flex-direction: column; /* En móvil, contenido en columna */
+    text-align: center;
+    padding: 2rem 5%;
+  }
+
+  .Img1, .Img2 {
+    max-width: 80%; /* Que ocupen ancho razonable */
+    margin: 0 auto;
+  }
+
+  .barra {
+    justify-content: center;
+  }
+
+  .barra a {
+    flex: 1 1 100%;
+    text-align: center;
+  }
+}

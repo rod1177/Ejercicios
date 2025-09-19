@@ -59,9 +59,8 @@ header{
     align-items: center;
     justify-content: space-between;
     margin: auto;
-    flex-direction: column;
+    flex-direction: float;
     max-width: 100%;
-    gap: 20px;
 
 }
 
@@ -86,16 +85,13 @@ header{
 .seccion2 p{
     text-align: left;
     padding: 1%;
-    font-size: 100%;
+    font-size: 1rem;
     
 }
 
 
 .Img1{
     width: 20%;
-    float: right;
-    padding: 8% 0%;
-    max-width: 200px;
     object-fit: cover;
 
 }
@@ -117,7 +113,6 @@ header{
     justify-content: space-between;
     margin: auto;
     flex-direction: column;
-    gap: 20px;
 
 }
 
@@ -204,39 +199,3 @@ footer{
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-@media (max-width: 768px) {
-    .Sec2, .Sec3 {
-        flex-direction: column;   /* apila texto e imagen */
-        text-align: center;
-    }
-
-    .Sec2 img, .Sec3 img {
-        margin-top: 20px;
-        max-width: 120px;  /* imágenes más pequeñas en móvil */
-    }
-
-    .seccion2 h2, .seccion3 h2 {
-        font-size: 180%;
-    }
-
-    .seccion2 h3, .seccion3 h3,
-    .seccion2 p, .seccion3 p {
-        font-size: 95%;
-    }
-}
