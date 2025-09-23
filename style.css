@@ -19,6 +19,7 @@
     color: white;
     margin: 1%;
     font-size: 100%;
+    text-decoration: none;
     
 }
 
@@ -43,10 +44,12 @@ header{
 }
 
 .boton{
-    background-color: black;
-    color: white;
-    padding: 0.8%;
-    margin: 2%;
+  background-color: black;
+  color: white;
+  padding: 15px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
 }
 
 
