@@ -12,21 +12,20 @@
 
 .barra{
     background-color: rgb(238, 11, 45);
-    padding: 1%;
+    padding: 1em;
     text-align: left;
 }
 .barra a{
     color: white;
-    margin: 1%;
     font-size: 100%;
     text-decoration: none;
+    padding: 1em;
     
 }
 
 .barra a:hover{
     color:black;
     background-color: white;
-    padding: 1%;
     cursor: pointer;
 }
 
@@ -38,18 +37,33 @@
 header{
     background-color: rgb(220, 15, 46);
     text-align: center;
-    padding: 5%;
+    padding: 4em;
     color: white;
-    font-size: 140%;
 }
+
+.sec1 h1{
+    font-weight:lighter;
+    padding: 0.8em;
+    font-size: 4em;
+
+}
+
+
 
 .boton{
   background-color: black;
+  border: black;
   color: white;
   padding: 15px 25px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
+  padding: 1em;
+}
+.boton:hover{
+        color:black;
+    background-color:rgb(155, 153, 153);
+    cursor: pointer;
 }
 
 
