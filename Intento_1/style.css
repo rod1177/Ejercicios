@@ -257,6 +257,24 @@ footer{
     }
 
 
+}*/
+
+
+@media (max-width: 768px) {
+  .Sec2, .Sec3 {
+    flex-direction: column;
+    padding: 5% 8%;
+  }
+
+  .Img1, .Img2 {
+    float: none;
+    width: 80%;
+    margin: 0 auto;
+    display: block;
+  }
+
+  .texto_sec2, .seccion3 {
+    padding: 1em;
+    text-align: center;
+  }
 }
-
-
