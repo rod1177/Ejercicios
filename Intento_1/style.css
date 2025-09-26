@@ -9,7 +9,6 @@
 
 
 
-
 .barra{
     background-color: rgb(238, 11, 45);
     padding: 1em;
@@ -17,10 +16,10 @@
 }
 .barra a{
     color: white;
-    font-size: 100%;
+    font-size: clamp(80%,1em,100%);
+    max-width: 90%;
     text-decoration: none;
     padding: 1em;
-    
 }
 
 .barra a:hover{
@@ -28,6 +27,7 @@
     background-color: white;
     cursor: pointer;
 }
+
 
 
 
@@ -43,8 +43,11 @@ header{
 
 .sec1 h1{
     font-weight:lighter;
-    padding: 0.8em;
+    padding: auto;
+    padding-bottom: 0.5em;
     font-size: 4em;
+    max-width: 100%;
+    text-align: center;
 
 }
 
@@ -61,7 +64,7 @@ header{
   padding: 1em;
 }
 .boton:hover{
-        color:black;
+    color:black;
     background-color:rgb(155, 153, 153);
     cursor: pointer;
 }
@@ -69,26 +72,51 @@ header{
 
 
 
+
 .Sec2{
     background-color: white;
-    padding: 3% 20%;
+    padding: 3% 15%;
+    margin: auto;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin: auto;
-    flex-direction: float;
+    flex-direction: column;
     max-width: 100%;
+
 
 }
 
 .seccion2{
     flex: 1;
-    text-align: right;
 }
+/*
+.imagen1_sec2{
+    text-align: center;
+}
+
+.texto_sec2{
+    background-color: rgba(17, 17, 250, 0.452);
+    padding-right: 100px;
+}
+
+.texto_sec2 h2{
+    text-align: left;
+    padding: 1%;    
+    font-size:250%;
+    
+}
+*/
+
+
+
+
+
+
+
 
 .seccion2 h2{
     text-align: left;
-    padding: 1%;
+    padding: 1%;    
     font-size:250%;
 
 }
@@ -108,10 +136,10 @@ header{
 
 
 .Img1{
-    width: 22%;
+    max-width: 100%;
     float: right;
-    padding: 9% 5%;
-
+    padding: 1em 0.1em;
+    height: auto;
 }
 
 
@@ -124,13 +152,13 @@ header{
 
 .Sec3{
     background-color: rgba(128, 128, 128, 0.418);
-    padding: 5% 15%;
+    padding: 3% 15%;
     margin: auto;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin: auto;
     flex-direction: column;
+    max-width: 100%;
 
 }
 
@@ -165,10 +193,12 @@ header{
 }
 
 .Img2{
-    width: 30%;
+    width: 230px;
     float: left;
-    padding: 5% 5%;
+    padding: 1.2em 0.7em;
+    height: auto;
 }
+
 
 
 
@@ -206,13 +236,27 @@ footer{
     text-align: center;
     padding: 4%;
     color: gray;
-
 }
 
 
+/*
+@media (max-width: 768px){
 
 
+    .Img1{
+        width: 100%;
+        float: none;
+        align-items: center;
+    }
+}*/
+
+/*
+@media screen and (max-width:768px){
+    .sec3{
+        background-color: blue
+    }
 
 
+}
 
 
