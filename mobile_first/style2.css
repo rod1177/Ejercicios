@@ -47,15 +47,20 @@
 header {
   background-color: red;
   text-align: center;
-  padding: 2em 1em;
   color: white;
+  padding: 0.9em;
 }
 
 .sec1 h1 {
   font-weight: lighter;
   font-size: 3em;
-  margin-bottom: 0.5em;
   text-align: center;
+  padding: 0.5em;
+  padding-bottom: 0.1em;
+}
+.sec1 p{
+  padding-bottom: 1.4em;
+  padding: 2em;
 }
 
 .boton {
@@ -107,6 +112,7 @@ header {
   width: 220px;
   max-width: 100%;
   height: auto;
+  margin: 1em;
 }
 
 .Sec3 {
@@ -142,10 +148,11 @@ header {
   width: 220px;
   max-width: 100%;
   height: auto;
+  margin: 1em;
 }
 
 .quote {
-  background-color: gray;
+  background-color: rgba(63, 59, 59, 0.829);
   text-align: center;
   padding: 2em;
 }
@@ -157,11 +164,30 @@ header {
 
 
 footer {
-  background-color: rgba(128, 128, 128, 0.418);
+  background-color: rgba(128, 128, 128, 0.2);
   text-align: center;
   padding: 2em;
-  color: gray;
 }
+
+footer a{
+  text-decoration: none;
+  color: rgba(63, 59, 59, 0.829);
+}
+
+footer p{
+  padding: 2em;
+  color: rgba(128, 128, 128, 0.848);
+}
+footer .w3{
+ color: rgba(128, 128, 128, 0.848);
+ text-decoration: underline;
+}
+
+footer a:hover{
+  cursor: pointer;
+  color: rgb(236, 24, 24);
+}
+
 
 
 @media (max-width: 426px) {
@@ -217,4 +243,25 @@ footer {
     width: 70%;
     max-width: 250px;
   }
+}
+
+
+
+
+@media (min-width: 1440px ){
+
+  .Sec2,
+  .Sec3{
+    padding: 0 23%;
+    text-align: justify;
+  }
+
+  .Img1{
+    width: 180px;
+    }
+  .img2{
+    width: 200px;
+    text-align: center;
+  }
+
 }
